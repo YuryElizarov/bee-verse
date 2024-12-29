@@ -17,6 +17,7 @@ function Index() {
     if (e.key === "Enter") {
       e.preventDefault();
       onSetUserName(userName)
+      onClosePopup(EPopups.SetName)
     }
   }, [userName]);
 
