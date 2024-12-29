@@ -2,7 +2,7 @@ import './styles.scss'
 import Loading from "../../../components/genereal/loading";
 import {mainLoading} from "../../../config/loadings.ts";
 import {useUserState} from "../../../store/user/hooks.ts";
-import {useCallback, useEffect} from "react";
+import {useCallback} from "react";
 import {useAppAction} from "../../../store/app/hooks.ts";
 import {EPopups} from "../../../store/app/types.ts";
 
@@ -18,14 +18,12 @@ function Index({onLoading}: {onLoading: () => void}) {
         loading.remove()
       }
       onLoading()
+    } else {
+
+      onOpenPopup({popup: EPopups.SetName})
     }
   }, [onLoading, name])
 
-  useEffect(() => {
-    if (!name) {
-      onOpenPopup({popup: EPopups.SetName})
-    }
-  }, [name]);
   return (
     <>
       <div className="welcome__loading">
