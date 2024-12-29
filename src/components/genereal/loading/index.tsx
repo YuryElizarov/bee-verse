@@ -22,7 +22,7 @@ function Index({messages, onLoad}:{messages: TLoadingMessages, onLoad?: () => vo
     }, 1000)
   }, [onLoad])
   useEffect(() => {
-    if (percent >= maxPercent) setTimeout(onLoad, 1000)
+    if (percent >= maxPercent && onLoad) setTimeout(onLoad, 1000)
   }, [percent, onLoad]);
 
   return (

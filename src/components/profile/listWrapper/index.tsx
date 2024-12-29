@@ -18,7 +18,7 @@ function Index({children, header, data, baseTop = -60, maxTop = -200, className}
   const onTouchMoveHandler = (e: any) => {
     const touch = e?.touches[0] || e.changedTouches[0];
     const currentY = touch.clientY;
-    const deltaY = startY - currentY;
+    const deltaY = (startY || 0) - currentY;
 
     setTop(prevState => {
       let newTop = prevState - deltaY;
@@ -28,7 +28,7 @@ function Index({children, header, data, baseTop = -60, maxTop = -200, className}
       return newTop
     });
   }
-  const handleChildClick = (e) => {
+  const handleChildClick = (e: any) => {
     e.stopPropagation(); // Останавливаем распространение события
   };
 
