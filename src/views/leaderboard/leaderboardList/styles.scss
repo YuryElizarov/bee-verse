@@ -1,0 +1,47 @@
+.leaderboard {
+  width: 100%;
+  display: flex;
+
+  &__tab {
+    width: 37px;
+  }
+
+  &__header {
+    padding: 34px 10px 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .tabs__tab__bg {
+
+      background: var(--blue-border);
+      background-size: calc(100% + 10px) 100%;
+      background-position: center;
+      &:before {
+        background: var(--blue-bg);
+      }
+    }
+  }
+
+  &__body {
+    width: 100%;
+
+    &__rating {
+      width: 100%;
+
+      .backing {
+        .backing__inner {
+          background: url("../../../assets/images/backing/wood.png"), linear-gradient(to bottom, #854C32, #D38059 80%);
+          background-position: top left, 0 -150px;
+          background-size: 376px 263px;
+          padding: 8px 10px;
+
+          .heading {
+
+          }
+        }
+      }
+    }
+  }
+}

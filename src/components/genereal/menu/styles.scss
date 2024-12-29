@@ -1,0 +1,108 @@
+.menu {
+  position: fixed;
+  bottom: -5px;
+  z-index: 1000;
+  left: 5px;
+  right: 5px;
+  height: calc(64px + 5px);
+  transition: all .25s ease;
+  * {
+    transition: all .25s ease;
+  }
+  & > .backing {
+    border-radius: 7px 7px 0 0;
+  }
+  &__list {
+    display: flex;
+    width: 100%;
+    padding: 0 16.5px;
+    position: absolute !important;
+    bottom: 30px;
+    align-items: flex-end;
+    justify-content: space-between;
+
+  }
+  &-item {
+    width: 44px;
+    height: 44px;
+    filter: var(--widget-shadow);
+    position: relative;
+    &_active {
+      width: 72px;
+      height: 64px;
+      .menu-item__icon {
+        border-radius: 9px;
+        background: var(--diamond-border);
+        &:before {
+          background: var(--diamond-bg);
+          content: '';
+          position: absolute;
+          inset: 4px;
+          border-radius: 6px;
+          z-index: 1;
+        }
+        & > * {
+          z-index: 2;
+        }
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+
+    &__chain {
+      position: absolute;
+      width: 59px;
+      height: 67px;
+      left: -8px;
+      top: -6.57px;
+      z-index: 10;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &_blocked {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    & > .backing {
+      border-radius: 10px;
+    }
+
+    &__inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+
+      .paragraph {
+        margin-top: -2px;
+        letter-spacing: -.4px;
+        text-align: center;
+        background: var(--menu-text);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        font-weight: 800;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+        filter: drop-shadow(0 2px 2px rgba(var(--black-rgb), .25));
+      }
+    }
+  }
+}
+

@@ -1,0 +1,43 @@
+
+:root {
+  --white: #fff;
+  --white-rgb: 255, 255, 255;
+  --black: #000;
+  --black-rgb: 0, 0, 0;
+  --backgorund: #272430;
+
+  --text: #000;
+  --text-light: #fff;
+  --heading: #E9FAFF;
+  --heading-border: linear-gradient(to bottom, #663925, #4B2F23);
+
+  --loading-border: linear-gradient(to top, #343044, #A49EBC);
+  --loading-progress-border: linear-gradient(to bottom, #FDDF3F, #D86E0C);
+  --loading-progress-bg: linear-gradient(to right, #FDDF3F, #FDDF3F 15%, #D86E0C 105%);
+
+  --diamond-border: linear-gradient(to bottom, #70FFD7, #0B8B81);
+  --diamond-bg: linear-gradient(to right, #07C4B8, #40EFB8, #07C4B8);
+
+  --blue-border: linear-gradient(to bottom, #ACE0F8, #3E86A7);
+  --blue-bg: linear-gradient(to right, #60A6C7, #84C3DF, #60A6C7);
+
+  --gold-bg: linear-gradient(to right, #E2871B, #F4AF29, #E2871B);
+  --gold-border: linear-gradient(to bottom, #FDDF3F, #D86E0C);;
+
+  --input-block-border: linear-gradient(to top, #343044, #343044 4px, #A49EBC calc(100% - 4px), #A49EBC);
+  --input: #E9FAFF;
+  --input-border: #363149;
+
+  --border-wood: #521A0C;
+  --bg-wood: #975E3A;
+
+  --popup-blackout: linear-gradient(to left, rgba(69, 44, 28, 0.4), rgba(69, 44, 28, 0.2) 50%, rgba(69, 44, 28, 0.4));
+
+  --card-purple: #363149;
+  --card--border: #424251;
+
+  --menu-text: #0A4843;
+
+  --widget-shadow: drop-shadow(0 2px 7px rgba(47, 52, 56, 0.5));
+}
+

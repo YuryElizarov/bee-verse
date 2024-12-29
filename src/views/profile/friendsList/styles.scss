@@ -1,0 +1,37 @@
+.friends {
+  width: 100%;
+  display: flex;
+  &__header {
+    padding: 34px 10px 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    &__update {
+      position: absolute;
+      right: 10px;
+      top: calc(50% + 12px);
+      transform: translateY(-50%);
+    }
+    &__title-block {
+      display: flex;
+      flex-direction: column;
+      .heading {
+      }
+    }
+  }
+  &__body {
+    width: 100%;
+    &__button {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 5px;
+      &__icon {
+        display: flex;
+        filter: drop-shadow(0 2.1px 2.1px rgba(var(--black-rgb), .25));
+      }
+    }
+  }
+}

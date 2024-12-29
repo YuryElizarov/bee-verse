@@ -1,0 +1,42 @@
+.list-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  height: calc(100% - 50px);
+  top: -60px;
+  transition: all .25s ease;
+  //min-height: 100%;
+  background-image: url("../../../assets/images/backing/stoneList.png");
+  background-size: calc(100% + 12px) auto;
+  background-position: center top;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    width: 100%;
+  }
+  &__content {
+    padding: 0 10px;
+    overflow: hidden;
+    height: 100%;
+    .backing {
+      border-radius: 10px;
+      .backing__inner {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        padding: 13px 11px;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+}

@@ -1,0 +1,64 @@
+.header {
+  width: 100%;
+  padding: 15px 10px;
+  min-height: 258px;
+
+  &__nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    &__back {
+      position: absolute;
+      left: 0;
+    }
+    &__title-block {
+      display: flex;
+      flex-direction: column;
+      .heading {
+      }
+    }
+  }
+  &_green {
+    background: url("../../../assets/images/honeycombs/honeycombsProfile.png") top center;
+    background-size: 100% 100%;
+    .header__nav {
+      .heading, .paragraph {
+        text-align: center;
+        background: var(--menu-text);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+  &_default {
+    background: url("../../../assets/images/honeycombs/honeycombs.png") top center;
+    background-size: 100% 100%;
+    .header__nav {
+      .heading, .paragraph {
+        text-align: center;
+        background: var(--heading-border);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+  &_diamond {
+    background: url("../../../assets/images/honeycombs/honeycombDiamond.png") top center;
+    background-size: 100% 100%;
+    .header__nav {
+      .heading, .paragraph {
+        text-align: center;
+        background: var(--backgorund);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+
+  &__widgets {
+    margin-top: 10px;
+    width: 100%;
+  }
+}

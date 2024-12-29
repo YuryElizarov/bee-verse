@@ -1,0 +1,30 @@
+@use "../../styles/mixins";
+.heading {
+  width: 100%;
+  text-align: center;
+  position: relative;
+
+  color: var(--heading);
+  background: var(--heading-border);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2.5px transparent;
+  stroke-linejoin: round; /* Скругление углов */
+  stroke-linecap: round; /* Скругление концов линий */
+
+  line-height: 1.4;
+
+  &_variant-h2 {
+    font-size: 26px;
+  }
+  &_variant-h3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  &_variant-h4 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  @include mixins.media('md') {
+  }
+}

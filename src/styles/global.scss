@@ -1,0 +1,38 @@
+@use "fonts";
+@use "vars";
+@use "mixins";
+
+* {
+  color: var(--text);
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  font-family: "Exo2", sans-serif;
+  height: 100%;
+  background: var(--backgorund);
+  * {
+    font-family: "Exo2", sans-serif;
+  }
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+
+  img {
+    max-width: 100%;
+  }
+  &.overflow {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+

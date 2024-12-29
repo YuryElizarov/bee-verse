@@ -1,0 +1,15 @@
+@use "sass:map";
+
+$media-queries: ("xs": "320px",
+        "sm": "576px",
+        "md": "768px",
+        "lg": "968px",
+        "xl": "1040px",
+        "xxl": "1400px"
+);
+
+@mixin media($breakpoint) {
+  @media (max-width: map.get($media-queries, $breakpoint)) {
+    @content
+  }
+}

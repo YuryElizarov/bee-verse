@@ -1,0 +1,24 @@
+.profile-widgets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  &__nickname-and-clan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: var(--widget-shadow);
+
+    .user-clan {
+      margin-left: -25px;
+    }
+  }
+}

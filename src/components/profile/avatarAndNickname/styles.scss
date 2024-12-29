@@ -1,0 +1,53 @@
+.avatar-and-nickname {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__avatar {
+    width: 61px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: 2;
+      inset: 0;
+
+      background-image: url("../../../assets/images/profile/avatarBorder.svg");
+      background-size: 100% 100%;
+      background-position: center center;
+    }
+    img {
+      mask-image: url("../../../assets/images/profile/avatarMask.svg");
+      z-index: 0;
+      height: auto;
+      max-width: 100%;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      mask-size: 51px 48px;
+    }
+  }
+  &__nickname {
+    width: 157px;
+    height: 48px;
+    background: url("../../../assets/images/profile/avatarBacking.svg") center;
+    background-size: 100% 100%;
+    margin-left: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .heading {
+      text-align: left;
+      padding-left: 21px;
+      width: 100%;
+      background: var(--border-wood);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+    }
+  }
+}

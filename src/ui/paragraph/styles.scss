@@ -1,0 +1,28 @@
+@use "../../styles/mixins";
+.paragraph {
+  color: var(--heading);
+  background: var(--heading-border);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+  stroke-linejoin: round; /* Скругление углов */
+  stroke-linecap: round; /* Скругление концов линий */
+
+  line-height: 1.4;
+  width: 100%;
+
+  &_default_1 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    color: var(--primary);
+    vertical-align: baseline;
+    cursor: pointer;
+  }
+}

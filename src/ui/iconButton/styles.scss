@@ -1,0 +1,16 @@
+.icon-button {
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+  .backing {
+    border-radius: 12px;
+    .backing__inner {
+      box-shadow: none;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+  }
+}

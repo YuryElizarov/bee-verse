@@ -1,0 +1,41 @@
+.quests {
+  width: 100%;
+  display: flex;
+
+  &__tab {
+    width: 37px;
+  }
+
+  &__header {
+    padding: 34px 10px 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .tabs__tab {
+      height: 60px;
+      .paragraph {
+        text-align: center;
+      }
+    }
+  }
+
+  &__list {
+    .list-wrapper__content {
+      .backing {
+        background: none;
+        padding: 0;
+        .backing__inner {
+          border: none;
+          padding: 0;
+          background: none;
+          box-shadow: none;
+        }
+      }
+      .list-wrapper__list {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}

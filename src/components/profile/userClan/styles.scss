@@ -1,0 +1,40 @@
+.user-clan {
+  width: 82px;
+  height: 48px;
+  .backing {
+    border-radius: 10px;
+    box-shadow: inset 0 -2px 7px 0 rgba(60, 35, 0, 0.5);
+    padding: 0;
+    &:before {
+      content: none;
+    }
+    .backing__inner {
+      border-radius: 10px;
+      background: none;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .paragraph {
+      padding: 0 2px;
+      text-align: center;
+      letter-spacing: -.4px;
+      width: fit-content;
+    }
+  }
+  &__lock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

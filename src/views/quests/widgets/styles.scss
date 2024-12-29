@@ -1,0 +1,144 @@
+.quests-widgets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 5px;
+
+  &__days {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+  }
+
+  & > .paragraph {
+    text-align: center;
+    line-height: 1.4;
+    background: var(--menu-text);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    font-size: 14px;
+  }
+
+  &__chain {
+    width: calc(100% + 30px);
+    height: 13px;
+    background: url("../../../assets/images/profile/questsChain.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  &__list {
+    gap: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 16px;
+  }
+}
+
+.quests-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  gap: 4px;
+
+  &__current {
+    .quests-item__desc {
+      width: 78px;
+      height: 90px;
+      svg {
+        width: 41px;
+        height: 41px;
+      }
+    }
+
+    .quests-item__title {
+      .paragraph {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__title {
+    .paragraph {
+      padding: 2px;
+      font-weight: 800;
+      background: var(--menu-text);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+    }
+  }
+  &__bg {
+    background: var(--gold-border);
+    border-radius: 8px;
+    position: absolute !important;
+    z-index: 1;
+    inset: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      border-radius: 6px;
+      z-index: 1;
+      background: var(--gold-bg);
+    }
+  }
+
+  &__next {
+    .quests-item__bg {
+      background: var(--diamond-border);
+
+      &:before {
+        background: var(--diamond-bg);
+      }
+    }
+  }
+
+  &__desc {
+    width: 68px;
+    height: 68px;
+    svg {
+      width: 28px;
+      height: 28px;
+      filter: drop-shadow(0 2.75px 2.75px rgba(var(--black-rgb), .25));
+    }
+
+    .paragraph {
+      text-align: center;
+    }
+
+    .backing {
+      border-radius: 12px;
+
+      .backing__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        border-radius: 9px;
+        background: url("../../../assets/images/backing/wood30.png"), linear-gradient(to bottom, #663925 47%, #854C32 58%, #854C32 87%, #D38059 97%);
+        background-position: -4px -4px, center;
+        background-size: 480px 336px, auto auto;
+      }
+    }
+
+    .backing_wood-small.backing::after {
+      border-radius: 11px;
+    }
+  }
+}
