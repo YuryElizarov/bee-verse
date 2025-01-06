@@ -16,8 +16,7 @@ import {EParagraphVariant} from "../../../ui/paragraph/types.ts";
 function Index() {
   return (
     <ListWrapper
-      baseTop={-20}
-      maxTop={-190}
+      baseTop={240}
       data={
         <>
           {generateArrayFrom(0, 10).map((_, index) => <UserListItem key={index}/>)}

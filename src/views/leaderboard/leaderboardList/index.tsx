@@ -19,8 +19,7 @@ function Index() {
   const [activeTab, setActiveTab] = useState(1)
   return (
     <ListWrapper
-      maxTop={-200}
-      baseTop={-200}
+      baseTop={50}
       data={
         <>
           {generateArrayFrom(0, 10).map((_, index) => <UserListItem key={index}/>)}
