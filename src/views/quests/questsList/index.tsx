@@ -12,8 +12,7 @@ function Index() {
   return (
     <ListWrapper
       className={'quests__list'}
-      baseTop={-20}
-      maxTop={-190}
+      baseTop={240}
       data={
         <>
           {generateArrayFrom(0, 10).map((_, index) => <QuestListItem key={index}/>)}

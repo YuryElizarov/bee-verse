@@ -3,7 +3,7 @@ import {ReactNode} from "react";
 import Backing from "../../genereal/backing";
 import {EBacking} from "../../genereal/backing/types.ts";
 
-function Index({children, header, data, baseTop, className}: {className?: string, header?: ReactNode, children?: ReactNode, data: ReactNode, maxTop?: number }) {
+function Index({children, header, data, baseTop, className}: {className?: string, header?: ReactNode, children?: ReactNode, data: ReactNode, baseTop?: number }) {
 
   return (
     <div
